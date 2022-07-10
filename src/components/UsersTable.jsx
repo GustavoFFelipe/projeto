@@ -1,4 +1,14 @@
 import React from 'react';
+import styles from './styles.scss'
+const EditButton = {
+  "margin": "0 10px",
+  "background": "lightyellow",
+}
+
+const RemoveButton = {
+  "margin": "0 10px",
+  "background": "lightcoral",
+}
 
 const UsersTable = (props) => (
   
@@ -24,7 +34,7 @@ const UsersTable = (props) => (
                         <td>{user.age}</td>
 
                         <td>
-                          <button
+                          <button style={EditButton}
                           onClick={
                             () => {
                               props.editRow(user)
@@ -34,7 +44,7 @@ const UsersTable = (props) => (
                         </td>
 
                         <td>
-                          <button
+                          <button style={RemoveButton}
                           onClick={
                             ()=>{
                               props.deleteUser(user.id)
