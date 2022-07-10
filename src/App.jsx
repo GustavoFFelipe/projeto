@@ -1,6 +1,6 @@
 import AddUserForm from './components/AddUserForm';
 import EditUserForm from './components/EditUserForm'
-import styles from './components/styles.modules.css'
+import styles from './components/styles.module.css'
 import Users from './components/Users';
 
 
